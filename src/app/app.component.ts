@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'assignment7';
+  counter = 0;
+  name = "";
+  incrementCounter(){
+    this.counter = this.counter+1;
+  }
+  setValue(value){
+    this.name = value;
+    console.log(this.name);
+
+  }
 }
